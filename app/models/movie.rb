@@ -22,7 +22,7 @@ class Movie < ApplicationRecord
     return the_director
   end
 
-  def character
+  def characters
     the_characters = Character.where({ :movie_id => self.id })
     return the_characters
   end
